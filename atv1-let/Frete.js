@@ -1,4 +1,4 @@
-let ValorCompra = 160;
+let ValorCompra = 249;
 let resultado;
 
 
