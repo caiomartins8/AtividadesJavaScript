@@ -1,5 +1,5 @@
 let produto = 200;
-let desconto = 0.20;
+let desconto = 0.50;
 let quantidade = 3;
 
 let valorDesconto = produto * desconto;

@@ -1,0 +1,16 @@
+
+Qual será o resultado de Z ?
+
+let x = 5;
+let y = '8';
+let z = x + y;
+
+Z = 5 + 8 (string) = 58
+
+
+
+Qual será o resultado de X ?
+let x = 5;
+x++;
+
+X = 5 + 1 = 6
