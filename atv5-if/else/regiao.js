@@ -15,7 +15,6 @@ else if (estado === "AC" || estado === "AM" || estado === "AP" || estado === "PA
   console.log("🌳 Maior região em território – ocupa quase metade do Brasil.");
 } 
 
-
 else if (estado === "AL" || estado === "BA" || estado === "CE" || estado === "MA" || estado === "PB" || estado === "PE" || estado === "PI" || estado === "RN" || estado === "SE") {
   console.log("VOCÊ É DA REGIÃO NORDESTE!");
   console.log("🌞 Clima variado – praias tropicais, sertão semiárido e muita cultura regional.");
