@@ -1,0 +1,122 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+/*IMC*/
+
+#body-calculadora {
+  background-image: url("imagens/imc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+
+ /*COMBUSTIVEL*/
+
+ #body-combustivel {
+  background-image: url("imagens/combustivel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+/*FRETE*/
+
+#body-frete {
+  background-image: url("imagens/frete.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+/*RETANGULO*/
+
+#body-retangulo {
+  background-image: url("imagens/retangulo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+/*SALDO*/
+
+#body-saldo {
+  background-image: url("imagens/saldo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+
+h2 {
+    font-size: 2rem;
+}
+
+.quadrado {
+  width: 30vw;   
+  height: 60vh; 
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.inputs{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    height: 30px;
+
+    
+}
+
+button{
+        height: 30px;
+color: white;
+background-color: rgb(42, 42, 215);
+border-radius: 6px;
+border: none;
+}

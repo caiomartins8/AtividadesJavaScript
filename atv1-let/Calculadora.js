@@ -1,17 +1,26 @@
-let peso = 90 ;
-let altura = 1.84;
+function verificar() {
+
+
+    let peso = document.getElementById("inputPeso").value ;
+let altura = document.getElementById("inputAltura").value ;
+let resultado = "";
+
 let imc = peso / (altura * altura);
 
 if (imc < 18.5) {
-    console.log("Abaixo do peso")
+    resultado ="Abaixo do peso"
 }
 else if (imc >= 18.5 && imc <= 24.9) {
-    console.log("Peso normal")
+    resultado= "Peso normal"
 }
 else if (imc >= 25 && imc <= 29.9) {
-    console.log("Sobre Peso")
+    resultado= "Sobre Peso"
 }
 else {
-    console.log("Obesidade")
+    resultado = "Obesidade"
+
+}
+
+    document.getElementById("resultado").innerText = resultado;
 
 }

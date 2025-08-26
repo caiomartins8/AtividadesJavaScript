@@ -1,12 +1,13 @@
-let Saldo = 80;
-let Produto = 99;
+function calcular() {
+    let Saldo = document.getElementById("inputSaldo").value;
+    let Produto = document.getElementById("inputPreco").value;
+    let resultado = "";
 
+    if (Saldo >= Produto) {
+        resultado = `Você tem saldo para comprar o produto.`;
+    } else {
+        resultado = `Você não tem saldo para comprar o produto.`;
+    }
 
-if (Saldo > Produto) {
-    console.log("Você tem saldo para comprar o Produto")
-
-}
-else {
-    console.log("Você não tem saldo para comprar o Produto")
-
+    document.getElementById("resultado").innerHTML = resultado;
 }

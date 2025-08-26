@@ -1,7 +1,14 @@
-let altura = 6;
-let base = 4;
-
+function calcular(){
+let altura = document.getElementById("inputAltura").value;
+let base = document.getElementById("inputBase").value;
+let resultado = "";
 
 area = altura*base;
 
-console.log("A área total é de :", area , "cm2" )
+resultado = `A área total é :${area} cm2` ;
+
+document.getElementById("resultado").innerText= resultado ;
+    
+}
+
+

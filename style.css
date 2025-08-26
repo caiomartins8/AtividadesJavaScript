@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+
+header {
+
+    background-color: rgb(16, 22, 34);
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 8px;
+}
+
+
+main {
+    margin-top: 7vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+
+}
+
+main section h1 {
+    color: rgb(18, 18, 138);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+main section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main #sec-let nav {
+    width: 100%;
+}
+
+
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+strong {
+    font-weight: 800;
+}
+
+main #sec-let nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 0.8rem;
+    background-color: rgb(110, 153, 255);
+    height: 4vh;
+}
+
+main #sec-const nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 0.8rem;
+    background-color: rgb(86, 121, 203);
+    height: 4vh;
+}
+
+main #sec-operadores nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 0.8rem;
+    background-color: rgb(71, 99, 165);
+    height: 4vh;
+}
+
+main #sec-operadores2 nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 0.8rem;
+    background-color: rgb(56, 77, 126);
+    height: 4vh;
+}
+
+main #sec-elseIf nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 0.8rem;
+    background-color: rgb(41, 57, 93);
+    height: 4vh;
+}
+
+main #sec-liveCode nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 0.8rem;
+    background-color: rgb(27, 37, 58);
+    height: 4vh;
+}
+
+main #sec-HTMLjs nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 0.8rem;
+    background-color: rgb(16, 22, 34);
+    height: 4vh;
+}

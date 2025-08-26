@@ -1,10 +1,14 @@
-let LitroPorKm = 10;
-let Distancia = 250 ;
-let ValorLitro = 5.79;
+function calcular() {
+    let LitroPorKm = document.getElementById("inputKM").value;
+    let Distancia = document.getElementById("inputDistancia").value;
+    let ValorLitro = document.getElementById("inputValor").value;
+    let resultado = "";
 
-let LitrosNecessarios = Distancia/LitroPorKm;
+    
+    let LitrosNecessarios = Distancia / LitroPorKm;
+    let ValorLitroFinal = LitrosNecessarios * ValorLitro;
 
-let ValorLitroFinal = LitrosNecessarios * 5.79;
+    resultado = `Serão necessários: ${LitrosNecessarios.toFixed(2)} litros, e custará: R$ ${ValorLitroFinal.toFixed(2)}`;
 
-console.log("Serão necessários : ", LitrosNecessarios ,
-    "litros , e custará : R$" ,ValorLitroFinal,)
+    document.getElementById("resultado").innerText = resultado;
+}
