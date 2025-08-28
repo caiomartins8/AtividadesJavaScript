@@ -1,6 +1,15 @@
-let celsius = 30 
-const fator = 9 / 5 
+function verificar() {
+  let celsius = Number(document.getElementById("inputTemperatura").value);
+  let resultado = "";
 
-let fahrenheit = (celsius * fator) + 32 ;
+  if (isNaN(celsius)) {
+    resultado = "Por favor, digite uma temperatura válida!";
+  } else {
+    const fator = 9 / 5;
+    let fahrenheit = (celsius * fator) + 32;
 
-console.log(celsius , "graus Celsius em Fahrenheit são :" , fahrenheit,"F");
+    resultado = `${celsius}°C em Fahrenheit são: ${fahrenheit.toFixed(2)}°F`;
+  }
+
+  document.getElementById("resultado").innerText = resultado;
+}

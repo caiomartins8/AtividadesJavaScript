@@ -1,16 +1,23 @@
-let idade = 10 ;
-let convite = false ;
+function verificar() {
+  let idade = Number(document.getElementById("inputIdade").value);
+  let convite = document.getElementById("inputConvite").value;
+  let resultado = "";
 
+  if (idade >= 18) {
+    resultado = "A idade é maior ou igual a 18 anos. <br>";
+  } else {
+    resultado = "A idade é menor que 18 anos. <br>";
+  }
 
-if(idade >= 18){
-console.log("A idade é maior que 18 anos ")
-}else{
-console.log("A idade é menor que 18 anos ")
+  let resultadoDois = (idade >= 18 || convite === "sim") 
+    ? "Entrada permitida" 
+    : "Entrada negada";
+
+  document.getElementById("resultado").innerHTML = resultado + resultadoDois;
 }
 
 
-let entrada = (idade >= 18 || convite == true)?"Entrada permitida":"Entrada negada"
-console.log(entrada)
+
 
 
 

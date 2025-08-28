@@ -1,6 +1,14 @@
-const pi = 3.14;
-let raio = 5;
+function verificar(){
+   
+    
+const pi = 3.14 ;
+let raio = document.getElementById("inputRaio").value;
+let resultado = ""
 
 let area = pi * (raio * raio) ; 
 
- console.log("A área do circulo é :" , area)
+resultado = `A área da esfera é de ${area}` ;
+
+document.getElementById("resultado").innerHTML= resultado;
+
+}

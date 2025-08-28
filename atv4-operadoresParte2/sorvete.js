@@ -1,16 +1,31 @@
+function verificar(){
+
+
+
+
 const sorvetePreco = 18 ;
-let quantidadeSorvetes = 2 ;
-let desconto = 0.50 ;
+let quantidadeSorvetes = Number(document.getElementById("inputQuantidade").value);
+let desconto = Number(document.getElementById("inputDesconto").value);
+let resultado = ""
+let resultadoDois = ""
+let resultadoTres = ""
 
 
 let valorSemDesconto = sorvetePreco * quantidadeSorvetes ;
-console.log("O valor sem desconto é de : R$"+valorSemDesconto)
+resultado = `O valor sem desconto é de : R$ ${valorSemDesconto} <br>`
 
 
-let valorDesconto = (sorvetePreco*quantidadeSorvetes) * desconto;
-console.log("você receberá : R$"+ valorDesconto ,"de desconto");
+let valorDesconto = (sorvetePreco * quantidadeSorvetes) * desconto;
+resultadoDois = `Você receberá : R$ ${valorDesconto} de desconto <br>`
+;
 
 
 let valorTotal = (sorvetePreco * desconto ) * quantidadeSorvetes ;
-console.log("O total a se pagar é de : R$" + valorTotal);
+resultadoTres = `O total a se pagar é de : R$ ${valorTotal} <br>`
+;
+
+document.getElementById("resultado").innerHTML = resultado + resultadoDois + resultadoTres ;
+
+
+}
 

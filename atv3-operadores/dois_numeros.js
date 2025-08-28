@@ -1,43 +1,39 @@
-let num1 = 33;
-let num2 = 33;
+function verificar() {
+  let num1 = Number(document.getElementById("inputNumeroUm").value);
+  let num2 = Number(document.getElementById("inputNumeroDois").value);
 
-let soma = num1 + num2;
-let subtracao = num1 - num2;
-let multiplicacao = num1 * num2;
-let divisao = num1 / num2;
-let resto = num1 % num2;
+  let soma = num1 + num2;
+  let subtracao = num1 - num2;
+  let multiplicacao = num1 * num2;
+  let divisao = num1 / num2;
+  let resto = num1 % num2;
 
-console.log("Soma: ", soma);
-console.log("Subtração: ", subtracao);
-console.log("Multiplicação: ", multiplicacao);
-console.log("Divisão: ", divisao);
-console.log("Resto: ", resto);
+  let resultado = `-------- RESULTADOS -------- <br>
+  Soma: ${soma} <br> 
+  Subtração: ${subtracao} <br> 
+  Multiplicação: ${multiplicacao} <br> 
+  Divisão: ${divisao} <br> 
+  Resto: ${resto} <br><br>`;
 
-if (num1 == num2) {
-  console.log("Os numeros são iguais ");
+  let resultadoDois = (num1 == num2) 
+    ? "Os números são iguais <br>" 
+    : "Os números são diferentes <br>";
 
-} else {
-  console.log("Os numeros são diferentes ");
+  let resultadoTres = (num1 > num2) 
+    ? `O número 1: ${num1} é maior que o número 2: ${num2} <br>` 
+    : `O número 2: ${num2} é maior que o número 1: ${num1} <br>`;
 
+  let resultadoQuatro = (num1 > 10 && num2 > 10) 
+    ? "Ambos são maiores que 10 <br>" 
+    : "Pelo menos um deles é maior que 10 <br>";
+
+  let resultadoCinco = (num1 == num2) 
+    ? "Os números são iguais <br>" 
+    : "Os números são diferentes <br>";
+
+  document.getElementById("resultado").innerHTML = 
+    resultado + resultadoDois + resultadoTres + resultadoQuatro + resultadoCinco;
 }
-
-if (num1 > num2) {
-  console.log("O num1 :", num1, " é maior e o num2 :", num2, " é menor");
-
-} else {
-  console.log("O num2 :", num2, "é maior e o num1 :", num1, "é menor");
-
-}
-
-if (num1 > 10 && num2 > 10) {
-  console.log("Ambos são maiores que 10.");
-} else {
-  console.log("Pelo menos um deles não é maior que 10.");
-}
-
-
-let resultado = (num1 == num2) ? 'Os números são iguais' : 'Os números são diferentes';
-console.log(resultado);
 
 
 // COLINHA DE OPERADORES

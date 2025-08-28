@@ -1,7 +1,20 @@
-const prompt = require("prompt-sync")(); 
+function verificar(){
 
 const numeroSecreto = 7;
-let numero = Number(prompt("Digite um número: "));
+let numero = Number(document.getElementById("inputNumsecreto").value);
+let resultado = ""
 
-let resultado = (numero === numeroSecreto) ? "Acertou!" : "Errou, tente novamente!";
-console.log(resultado);
+
+if(numero === numeroSecreto){
+    resultado = "PARABÉNS VOCÊ ACERTOU O NÚMERO SECRETO"
+}else{
+    resultado = "AAAHHH ... VOCÊ ERROU ! TENTE NOVAMENTE"
+
+}
+
+document.getElementById("resultado").innerHTML = resultado ;
+
+
+}
+
+

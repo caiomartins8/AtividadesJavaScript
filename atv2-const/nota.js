@@ -1,10 +1,13 @@
-const media = 60
-let nota = 30
+function verificar() {
+  const media = 60;
+  let nota = Number(document.getElementById("inputNota").value);
+  let resultado = "";
 
-if(nota > media){
-    console.log(" Parabéns ! Você foi aprovado  !")
+  if (nota > media) {
+    resultado = "Parabéns! Você foi aprovado!";
+  } else {
+    resultado = "Ah não! Você foi reprovado!";
+  }
 
-}
-else{
-    console.log("A não ! Você foi reprovado  !")
+  document.getElementById("resultado").innerText = resultado;
 }

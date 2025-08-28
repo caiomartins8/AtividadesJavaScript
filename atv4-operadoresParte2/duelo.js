@@ -1,30 +1,44 @@
-num1 = 3 ;
-num2 = 31 ;
+function verificar(){
+
+    
+num1 = Number(document.getElementById("inputNum1").value) ;
+num2 = Number(document.getElementById("inputNum2").value) ;
+let resultado =""
+let resultadoDois =""
+let resultadoTres =""
+
+
 
 if( num1 > num2){
-console.log(num1 ," é maior que ", num2)
+resultado = `${num1} é maior que ${num2} <br>`
 }else if (num1 == num2){
-console.log(num1 ," é igual a ", num2 , " , não tem maior")
+resultado = `${num1} é igual a ${num2} não tem maior <br>`
 
 }else{
-console.log(num2 ," é maior que ", num1)
+resultado = `${num2} é maior que  ${num1} <br> `
 
 }
 
 if( num1 < num2){
-console.log(num1 ," é menor que ", num2)
+    resultadoDois = `${num1} é menor que  ${num1} <br>`
+
 }else if (num1 == num2){
-console.log(num1 ," é igual a ", num2 , " , não tem menor")
+resultadoDois = `${num1} é igual a ${num2} não tem menor <br>`
 
 }
 else{
-console.log(num2 ," é menor que ", num1)
+resultadoDois = `${num2} é menor que  ${num1} <br> `
 
 }
 
 if( num1 == num2){
-console.log(num1 ," é igual que ", num2)
+resultadoTres = `${num1}  é igual que ${num2} <br>`
 }else{
-console.log(num2 ," é diferente de ", num1)
+resultadoTres = `${num1}  é diferente que ${num2} <br>`
 
 }
+
+document.getElementById("resultado").innerHTML = resultado + resultadoDois + resultadoTres
+
+}
+

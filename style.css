@@ -7,7 +7,7 @@
 
 header {
 
-    background-color: rgb(16, 22, 34);
+    background-color: #171d29;
     color: white;
     font-size: 0.8rem;
     text-align: center;
@@ -26,9 +26,9 @@ main {
 }
 
 main section h1 {
-    color: rgb(18, 18, 138);
+    color: #050d18;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -39,91 +39,39 @@ main section {
     gap: 10px;
 }
 
-main #sec-let nav {
-    width: 100%;
-}
-
-
-
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
 
 strong {
     font-weight: 800;
 }
 
-main #sec-let nav ul {
+.cards{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
-    font-size: 0.8rem;
-    background-color: rgb(110, 153, 255);
-    height: 4vh;
+    width: 100%;
+    background-color: #171d29;
+    padding: 2vw;}
+
+
+.card-title{
+    font-size: 0.8rem !important;
 }
 
-main #sec-const nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    font-size: 0.8rem;
-    background-color: rgb(86, 121, 203);
-    height: 4vh;
+.btn-primary{
+    background-color: #050d18 !important;
+    border: none !important;
 }
 
-main #sec-operadores nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    font-size: 0.8rem;
-    background-color: rgb(71, 99, 165);
-    height: 4vh;
+.card {
+    box-shadow: 0px 13px 14px 0px rgb(0, 0, 0, 0.7);
+    transition: ease-in-out 0.5s;
 }
 
-main #sec-operadores2 nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    font-size: 0.8rem;
-    background-color: rgb(56, 77, 126);
-    height: 4vh;
+.card:hover{
+    transform: scale(1.1);
 }
 
-main #sec-elseIf nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    font-size: 0.8rem;
-    background-color: rgb(41, 57, 93);
-    height: 4vh;
+.sec{
+    margin-top: 12vh;
 }
 
-main #sec-liveCode nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    font-size: 0.8rem;
-    background-color: rgb(27, 37, 58);
-    height: 4vh;
-}
-
-main #sec-HTMLjs nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    font-size: 0.8rem;
-    background-color: rgb(16, 22, 34);
-    height: 4vh;
-}

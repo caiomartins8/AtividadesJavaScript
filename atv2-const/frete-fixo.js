@@ -1,15 +1,19 @@
-const frete = 20 ;
-let pedido = 180 ;
+function verificar() {
+    const frete = 20;
+    let pedido = Number(document.getElementById("inputPedido").value); 
+    let resultado = "";
+    let total = 0;
 
-if(pedido < 100){
+    if (pedido < 100) {
+        total = pedido + frete;
 
-    total = pedido + frete ;
+        resultado = `Seu frete é de: R$ ${frete}<br>
+                     Seu produto é: R$ ${pedido}<br>
+                     O Total é de: R$ ${total}`;
+    } else {
+        resultado = `PARABÉNS! VOCÊ GANHOU FRETE GRÁTIS!<br>
+                     O total será somente o preço do produto: R$ ${pedido}`;
+    }
 
-    console.log("Seu frete é de : R$" , frete)
-    console.log("Seu produto é : R$" , pedido)
-    console.log("O Total é de : R$" , total)
-}
-else{
-        console.log("Parabéns ! Você ganhou frete grátis !")
-        console.log("O total será somente o preço do produto : $" , pedido)
+    document.getElementById("resultado").innerHTML = resultado;
 }

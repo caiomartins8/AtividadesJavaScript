@@ -1,6 +1,11 @@
-let produto = 200;
-let desconto = 0.50;
-let quantidade = 3;
+function verificar(){
+
+
+let produto = Number(document.getElementById("inputProduto").value);
+let desconto = Number(document.getElementById("inputDesconto").value);
+let quantidade = Number(document.getElementById("inputQuantidade").value);
+let resultado = "" ;
+let  resultadoDois = ""
 
 let valorDesconto = produto * desconto;
 
@@ -11,33 +16,27 @@ let totalCompra = precoFinal * quantidade;
 
 
 if (desconto > 0.5) {
-    console.log("O desconto é maior que 50%!");
+    resultado = "O desconto é maior que 50%! ,br>" ;
 } else {
-    console.log("O desconto não é maior que 50%.");
+    resultado = "O desconto é menor que 50%! <br>" ;
 }
 
 
 if (totalCompra > 100 && totalCompra < 500) {
-    console.log("O valor está sim entre R$100 e R$500 :", totalCompra)
+    resultadoDois = `O valor está sim entre R$100 e R$500 : ${totalCompra} <br>`
 } else {
-    console.log("O valor não está entre R$100 e R$500 :", totalCompra)
+    resultadoDois = `O valor não está entre R$100 e R$500 : ${totalCompra} <br>`
 
 }
 
 
-let resultado = (desconto >= 0.3) ? 'Compra com desconto especial' : 'Compra com desconto normal';
-console.log(resultado);
+let resultadoTres = (desconto >= 0.3) ? 'Compra com desconto especial <br>' : 'Compra com desconto normal <br>';
 
 
+let resultadoQuatro = ` O valor do desconto é : ${desconto} <br> O preço de cada unidade é : ${precoFinal} <br> O valor da compra é de : ${totalCompra}`
 
-
-
-console.log("O valor do desconto é :", desconto)
-console.log("O preço de cada unidade de produto :", precoFinal)
-console.log("O valor total da compra é :", totalCompra)
-
-
-
+document.getElementById("resultado").innerHTML = resultado + resultadoDois + resultadoTres + resultadoQuatro
+}
 
 
 // COLINHA DE OPERADORES

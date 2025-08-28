@@ -1,16 +1,31 @@
-let idade = 18 ;
-let carteirinha = true ;
+function verificar(){
+
+
+let idade = Number(document.getElementById("inputIdade").value );
+let carteirinha = document.getElementById("inputCarteirinha").value ;
+let resultado = ""
+let resultadoDois = ""
+
 
 if ( idade < 12 || idade > 60){
-console.log("Pela sua idade , seu ingresso sairá de graça")
+resultado ="Pela sua idade , seu ingresso sairá de graça <br>";
 }else{
-console.log("Pela sua idade , deverá pagar a inteira ")
+resultado ="Pela sua idade , você deverá pagar a inteira <br>";
 
 }
 
-if (carteirinha == true){
-console.log("Oba! Carteirinha de estudante paga MEIA-ENTRADA")
-}else{
-    console.log(" Aaah ... Você deve pagar INTEIRA")
+if (carteirinha == "sim"){
+resultadoDois = "Oba! Carteirinha de estudante paga MEIA-ENTRADA <br>" ;
+}else if (carteirinha == "não"){
+    resultadoDois = "Aaaaah ... Você deve pagar a INTEIRA ! <br>" ;
+
+    }else{
+resultadoDois = "INVÁLIDO ! ESCREVA SIM OU NÃO" ;
 
 }
+
+
+document.getElementById("resultado").innerHTML = resultado + resultadoDois ;
+}
+
+
