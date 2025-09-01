@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de Supermercado</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body id="body-caixa">
+
+<div class="quadrado">
+    <h2>Caixa de Supermercado</h2>
+    <div class="inputs">
+
+        <input type="number" id="inputPreco" placeholder="Digite o preço do produto ...">
+        <input type="number" id="inputQuantidade" placeholder="Digite a quantidade ...">
+        <input type="number" id="inputIdade" placeholder="Digite sua idade ...">
+        <input type="text" id="inputCupom" placeholder="Digite seu cupom ...">
+        <input type="text" id="inputProduto" placeholder="Você comprou bebida? (sim/não)">
+
+        <button onclick="verificar()">Finalizar Compra</button>
+<a href="../index.html"><button>Voltar pagina inicial</button></a>
+
+        <p id="resultado"></p>
+    </div>
+</div>
+
+<script src="caixaMercado.js"></script>
+</body>
+</html>

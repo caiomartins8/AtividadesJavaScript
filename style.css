@@ -1,77 +1,299 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat';
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat';
+  height: 100%;
+  font-size: clamp(14px, 1.2vw, 18px);
 }
 
 
-header {
 
-    background-color: #171d29;
-    color: white;
-    font-size: 0.8rem;
-    text-align: center;
-    padding: 8px;
+#bodybiblioteca header {
+  background-color: rgb(42, 42, 215);
+  color: white;
+  font-size: clamp(20px, 2.5vw, 32px);
+  text-align: center;
+  padding: 20px 0;
 }
 
 
-main {
-    margin-top: 7vh;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 30px;
-    width: 100%;
+
+
+#bodybiblioteca main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
 
 }
 
-main section h1 {
-    color: #050d18;
-    font-weight: 500;
-    font-size: 2rem;
-    text-align: center;
+
+#bodybiblioteca main section h1 {
+  color: rgb(16, 16, 44);
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
 }
 
 
-main section {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+#bodybiblioteca main section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 
-strong {
-    font-weight: 800;
+#bodybiblioteca strong {
+  font-weight: 800;
 }
 
-.cards{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    background-color: #171d29;
-    padding: 2vw;}
-
-
-.card-title{
-    font-size: 0.8rem !important;
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgb(16, 16, 44);
+  padding: 2vw;
 }
 
-.btn-primary{
-    background-color: #050d18 !important;
-    border: none !important;
+
+.card-title {
+  font-size: 0.8rem !important;
+}
+
+.btn-primary {
+  background-color: rgb(16, 16, 44) !important;
+  border: none !important;
 }
 
 .card {
-    box-shadow: 0px 13px 14px 0px rgb(0, 0, 0, 0.7);
-    transition: ease-in-out 0.5s;
+  box-shadow: 0px 13px 14px 0px rgb(0, 0, 0, 0.7);
+  transition: ease-in-out 0.5s;
 }
 
-.card:hover{
-    transform: scale(1.1);
+.card:hover {
+  transform: scale(1.1);
 }
 
-.sec{
-    margin-top: 12vh;
+.sec {
+  margin-top: 8vh;
 }
 
+/*atividades*/
+
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  flex-direction: column;
+}
+
+
+
+h2 {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.quadrado {
+  width: clamp(260px, 30vw, 480px);
+  height: auto;
+  background: white;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.6em 0;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+button {
+  width: 100%;
+  padding: 0.7em 1em;
+  color: white;
+  background-color: rgb(42, 42, 215);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: rgb(32, 32, 180);
+  transform: scale(1.02);
+}
+
+p {
+  text-align: center;
+}
+
+
+
+
+/*IF ELSE REGIOES*/
+
+#body-regioes {
+  background-image: url(imagens-geral/imagens-else/regioes.jpg);
+}
+
+/*IF ELSE SUPERMERCADO*/
+
+#body-caixa {
+  background-image: url(imagens-geral/imagens-livecode/caixadesupermercado.jpg);
+}
+
+/*IF ELSE PROVA*/
+
+#body-prova {
+  background-image: url(imagens-geral/imagens-if/prova.jpg);
+}
+
+/*IF ELSE NUMEROS*/
+
+#body-numeros {
+  background-image: url(imagens-geral/imagens-if/numeros.jpg);
+}
+
+/*IF ELSE IDADE*/
+
+#body-idade {
+  background-image: url(imagens-geral/imagens-if/idade.jpg);
+}
+
+/*IF ELSE HORAS*/
+
+#body-horas {
+  background-image: url(imagens-geral/imagens-if/horas.jpg);
+}
+
+/*IF ELSE FRUTAS*/
+
+#body-frutas {
+  background-image: url(imagens-geral/imagens-if/frutas.jpg);
+}
+
+/*OPERADORES DOIS SORVETE*/
+
+#body-sorvete {
+  background-image: url(imagens-geral/imagens-operadoresDois/sorvete.jpg);
+}
+
+/*OPERADORES DOIS NUMERO SECRETO*/
+
+#body-numeroSecreto {
+  background-image: url(imagens-geral/imagens-operadoresDois/numerosecreto.jpg);
+}
+
+/*OPERADORES DOIS CINEMA*/
+
+#body-Cinema {
+  background-image: url(imagens-geral/imagens-operadoresDois/cinema.jpg);
+}
+
+/*OPERADORES DUELO DOIS NUMEROS*/
+
+#body-duelo {
+  background-image: url(imagens-geral/imagens-operadoresDois/duelo.jpg);
+}
+
+
+/*OPERADORES DOIS NUMEROS*/
+
+#body-doisNumeros {
+  background-image: url(imagens-geral/imagens-operadores/dois-numero.jpg);
+}
+
+/*OPERADORES IDADE VIP*/
+#body-IdadeVip {
+  background-image: url(imagens-geral/imagens-operadores/idade-vip.jpg);
+}
+
+/*CALCULAR PREÇO DE COMPRA*/
+#body-precoCompra {
+  background-image: url(imagens-geral/imagens-operadores/produtos.jpg);
+}
+
+/*CONST AREA CIRCULO*/
+#body-circulo {
+  background-image: url(imagens-geral/imagens-const/esfera.jpeg);
+}
+
+/*CONST DESCONTO CINEMA*/
+#body-desconto {
+  background-image: url(imagens-geral/imagens-const/velhinhosnocinema.png);
+}
+
+/*CONST FRETE FIXO*/
+#body-frete {
+  background-image: url(imagens-geral/imagens-const/fretefixo.jpg);
+}
+
+/*CONST NOTA */
+#body-nota {
+  background-image: url(imagens-geral/imagens-const/nota.png);
+}
+
+
+/*CONST TEMPERATURA*/
+#body-temperatura {
+  background-image: url(imagens-geral/imagens-const/temperatura.jpg);
+}
+
+
+/*LET IMC*/
+
+#body-calculadora {
+  background-image: url(imagens-geral/imagens-let/imc.jpg);
+}
+
+
+/*LET COMBUSTIVEL*/
+
+#body-combustivel {
+  background-image: url(imagens-geral/imagens-let/combustivel.jpg);
+}
+
+/*LET FRETE*/
+
+#body-frete {
+  background-image: url(imagens-geral/imagens-let/frete.jpg);
+}
+
+/* LET RETANGULO*/
+
+#body-retangulo {
+  background-image: url(imagens-geral/imagens-let/retangulo.jpg);
+}
+
+/* LET SALDO*/
+
+#body-saldo {
+  background-image: url(imagens-geral/imagens-let/saldo.jpg);
+}
