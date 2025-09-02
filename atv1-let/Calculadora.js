@@ -1,7 +1,7 @@
 function verificar() {
 
 
-    let peso = document.getElementById("inputPeso").value ;
+let peso = document.getElementById("inputPeso").value ;
 let altura = document.getElementById("inputAltura").value ;
 let resultado = "";
 

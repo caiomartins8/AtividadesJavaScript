@@ -1,42 +1,25 @@
-function verificar(){
+function verificar() {
+  const produto = +document.getElementById("inputProduto").value;
+  const desconto = +document.getElementById("inputDesconto").value;
+  const quantidade = +document.getElementById("inputQuantidade").value;
 
+  const precoFinal = produto * (1 - desconto);
+  const totalCompra = precoFinal * quantidade;
 
-let produto = Number(document.getElementById("inputProduto").value);
-let desconto = Number(document.getElementById("inputDesconto").value);
-let quantidade = Number(document.getElementById("inputQuantidade").value);
-let resultado = "" ;
-let  resultadoDois = ""
+  const resultado = `
+    ${desconto > 0.5 ? "O desconto é maior que 50%! <br>" : "O desconto é menor que 50%! <br>"}
+    ${(totalCompra > 100 && totalCompra < 500) 
+        ? `O valor está sim entre R$100 e R$500 : ${totalCompra} <br>` 
+        : `O valor não está entre R$100 e R$500 : ${totalCompra} <br>`}
+    ${desconto >= 0.3 ? "Compra com desconto especial <br>" : "Compra com desconto normal <br>"}
+    O valor do desconto é: ${desconto} <br> 
+    O preço de cada unidade é: ${precoFinal} <br> 
+    O valor da compra é de: ${totalCompra}
+  `;
 
-let valorDesconto = produto * desconto;
-
-let precoFinal = produto - valorDesconto;
-
-let totalCompra = precoFinal * quantidade;
-
-
-
-if (desconto > 0.5) {
-    resultado = "O desconto é maior que 50%! ,br>" ;
-} else {
-    resultado = "O desconto é menor que 50%! <br>" ;
+  document.getElementById("resultado").innerHTML = resultado;
 }
 
-
-if (totalCompra > 100 && totalCompra < 500) {
-    resultadoDois = `O valor está sim entre R$100 e R$500 : ${totalCompra} <br>`
-} else {
-    resultadoDois = `O valor não está entre R$100 e R$500 : ${totalCompra} <br>`
-
-}
-
-
-let resultadoTres = (desconto >= 0.3) ? 'Compra com desconto especial <br>' : 'Compra com desconto normal <br>';
-
-
-let resultadoQuatro = ` O valor do desconto é : ${desconto} <br> O preço de cada unidade é : ${precoFinal} <br> O valor da compra é de : ${totalCompra}`
-
-document.getElementById("resultado").innerHTML = resultado + resultadoDois + resultadoTres + resultadoQuatro
-}
 
 
 // COLINHA DE OPERADORES

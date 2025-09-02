@@ -1,39 +1,25 @@
 function verificar() {
-  let num1 = Number(document.getElementById("inputNumeroUm").value);
-  let num2 = Number(document.getElementById("inputNumeroDois").value);
+  const num1 = +document.getElementById("inputNumeroUm").value;
+  const num2 = +document.getElementById("inputNumeroDois").value;
 
-  let soma = num1 + num2;
-  let subtracao = num1 - num2;
-  let multiplicacao = num1 * num2;
-  let divisao = num1 / num2;
-  let resto = num1 % num2;
+  const resultado = `
+    -------- RESULTADOS -------- <br>
+    Soma: ${num1 + num2} <br> 
+    Subtração: ${num1 - num2} <br> 
+    Multiplicação: ${num1 * num2} <br> 
+    Divisão: ${num1 / num2} <br> 
+    Resto: ${num1 % num2} <br><br>
+    ${num1 == num2 ? "Os números são iguais <br>" : "Os números são diferentes <br>"}
+    ${num1 > num2 ? `O número 1: ${num1} é maior que o número 2: ${num2} <br>` 
+                  : `O número 2: ${num2} é maior que o número 1: ${num1} <br>`}
+    ${(num1 > 10 && num2 > 10) ? "Ambos são maiores que 10 <br>" 
+                               : "Pelo menos um deles é maior que 10 <br>"}
+    ${num1 == num2 ? "Os números são iguais <br>" : "Os números são diferentes <br>"}
+  `;
 
-  let resultado = `-------- RESULTADOS -------- <br>
-  Soma: ${soma} <br> 
-  Subtração: ${subtracao} <br> 
-  Multiplicação: ${multiplicacao} <br> 
-  Divisão: ${divisao} <br> 
-  Resto: ${resto} <br><br>`;
-
-  let resultadoDois = (num1 == num2) 
-    ? "Os números são iguais <br>" 
-    : "Os números são diferentes <br>";
-
-  let resultadoTres = (num1 > num2) 
-    ? `O número 1: ${num1} é maior que o número 2: ${num2} <br>` 
-    : `O número 2: ${num2} é maior que o número 1: ${num1} <br>`;
-
-  let resultadoQuatro = (num1 > 10 && num2 > 10) 
-    ? "Ambos são maiores que 10 <br>" 
-    : "Pelo menos um deles é maior que 10 <br>";
-
-  let resultadoCinco = (num1 == num2) 
-    ? "Os números são iguais <br>" 
-    : "Os números são diferentes <br>";
-
-  document.getElementById("resultado").innerHTML = 
-    resultado + resultadoDois + resultadoTres + resultadoQuatro + resultadoCinco;
+  document.getElementById("resultado").innerHTML = resultado;
 }
+
 
 
 // COLINHA DE OPERADORES
